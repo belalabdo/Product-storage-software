@@ -1,7 +1,7 @@
 var products = [];
 var tbody = document.getElementById("tbody");
 
-if (localStorage["products"] != null) {
+if (localStorage["products"] != null || localStorage["products"] != undefined) {
   products = JSON.parse(localStorage["products"]);
   display(products, tbody);
 } else {
